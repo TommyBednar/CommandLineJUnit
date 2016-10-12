@@ -24,27 +24,4 @@ public class RentACatTest {
             + "ID 3. Mistoffelees: $500.00 / day\n");
     }
 
-    @Test
-    public void testGetCat_validId() {
-        RentACat rac = setup();
-        assertNotNull(rac.getCat(1));
-    }
-
-    @Test
-    public void testGetCat_invalidId() {
-        RentACat rac = setup();
-        assertNull(rac.getCat(7));
-    }
-
-    @Test
-    public void testGetCustomer_validId() {
-        RentACat rac = setup();
-        assertNotNull(rac.getCustomer(200));
-    }
-
-    @Test
-    public void testGetCustomer_invalidId() {
-        RentACat rac = setup();
-        assertNull(rac.getCustomer(100));
-    }
 }

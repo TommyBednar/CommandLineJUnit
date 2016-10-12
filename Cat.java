@@ -47,7 +47,6 @@ public class Cat {
 
     public boolean returnCat() {
         if (rented) {
-            owner = null;
             rented = false;
             return true;
         } else {
